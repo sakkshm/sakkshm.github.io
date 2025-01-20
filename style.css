@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  background-color: #0c0f11;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: auto; 
+  max-width: 70rem; 
+  padding: 1.5rem 1.5rem; 
+  font-size: 1.2rem; 
+  line-height: 34px; 
+  letter-spacing: 1px;
+  font-family: Helvetica, sans-serif;
+  
+}
+
+#desktop-nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+#hamburger-desktop-nav{
+  display: none;
+}
+
+.logo{
+  font-family: "Press Start 2P", serif;
+}
+
+.menu-links{
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-links a{
+  text-decoration: none;
+}
+
+.menu-links a:hover{
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+}
+
+.main-intro{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.1rem;
+  margin: auto;
+  padding: 10%;
+}
+
+.main-intro img{
+  border-radius: 50%;
+  border: 1px white solid;
+  height: 200px;
+}
+
+
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.intro-text .intro{
+  font-size: 50px;
+
+}
+
+.intro-text .intro-desc{
+  font-size: 25px;
+  color: grey;
+}
+
+.buttons span{
+  padding: 10px;
+}
+
+#about{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.about-title{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#experience{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.experience-title{
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+#projects{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.projects-title{
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.project-cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.proj-card{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.proj-card-title{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.proj-card-description{
+  font-size: 20px;
+  color: gray;
+}
+
+.hamburger-icon-lines{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#hamburger-icon{
+  display: none;
+}
+
+#hamburger-menu-links{
+  justify-content: space-evenly;  
+  z-index: 1000;
+  height: 10vh;
+  display: none;
+}
+
+
+#hamburger-menu-links a{
+  text-decoration: none;
+}
+
+#hamburger-menu-links a:hover{
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+}
+
+#hamburger-menu-links span{
+  margin-top: auto;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .main-intro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin: auto;
+    padding: 10%;
+  }
+  .intro{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    line-height: 45px;
+  }
+  .buttons{
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-links{
+    display: none;
+  }
+  #hamburger-icon{
+    display: inline;
+  }
+  
+}
+
+@media screen and (min-width: 700px) {
+  #hamburger-menu-links{
+    display: none;
+    visibility: hidden;
+  }
+}
+

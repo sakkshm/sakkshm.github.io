@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saksham Saxena</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+  
+    <div class="logo"><h1>sakkshm</h1></div>
+    <div class="menu-links">
+      <span><a href="#about">About</a></span>
+      <span><a href="#experience">Experience</a></span>
+      <span><a href="#projects">Projects</a></span>
+      <span><a href="#blog">Blog</a></span>    
+    </div>
+
+    <i class="fa fa-bars" id="hamburger-icon" style="font-size: 30px; cursor: pointer;" onclick="toggleMenu()"></i>
+
+  </nav>
+    <div id="hamburger-menu-links">
+      <span><a href="#about" onclick="toggleMenu()">About</a></span>
+      <span><a href="#experience" onclick="toggleMenu()">Experience</a></span>
+      <span><a href="#projects" onclick="toggleMenu()">Projects</a></span>
+      <span><a href="#blog" onclick="toggleMenu()">Blog</a></span>    
+    </div>
+  
+    
+
+  <section class="main-intro">
+    <div class="photo">
+      <img src="https://pbs.twimg.com/profile_images/1834910460384305152/8Lx6uexa_400x400.jpg">
+    </div>
+    <div class="intro-text">
+      <h1 class="intro">Hi! I am Saksham</h1>
+      <p class="intro-desc">
+        I am a student and a Programmer.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/sakkshm" target="_blank" style="text-decoration: none;"><span><i class="fa fa-github"></i> Github</span></a>
+        <a href="https://www.linkedin.com/in/sakkshm/" target="_blank" style="text-decoration: none;"><span><i class="fa fa-linkedin"></i> LinkedIn</span></a>
+        <a href="https://x.com/sakkshm" target="_blank" style="text-decoration: none;"><span><i class="fa fa-twitter"></i> Twitter</span></a>
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="about">
+    <div class="about-title"><h1>About me</h1></div> 
+    <div class="about-desc"><p style="color: gray;">I'm a computer science student and aspiring programmer who loves coding, problem-solving, and exploring new technologies. I enjoy building projects, taking on coding challenges, and contributing to open-source. Outside of programming, I’m passionate about reading, music, and constantly learning new things.</p></div>
+  </section>
+
+  
+
+  <section id="experience">
+    <div class="experience-title"><h1>Experience</h1></div> 
+    <div class="experience-desc"><p style="color: gray;">As a computer science student, I'm continuously learning and building my skills in programming and software development. I am learning C++ and Python, which I use to strengthen my problem-solving abilities and understanding of data structures and algorithms. I’m also exploring HTML, CSS, and JavaScript for web development, along with low-level programming to deepen my knowledge of system architecture and performance optimization. </p></div>
+  </section>
+  <section id="projects">
+    <div class="projects-title"><h1>Projects</h1></div> 
+    <div class="project-cards">
+      <div class="proj-card">
+        <h3 class="proj-card-title">TinyRayTracer</h3>
+        <p class="proj-card-description">A simple ray tracer in C++. It implements ray-sphere intersections, shading, reflections, and basic scene rendering. This project provided me with hands-on experience with fundamental ray tracing concepts, including vector math, color blending, and recursive reflection, creating simple yet visually appealing 3D scenes.</p>
+        <p class="proj-card-skills">Skills: C++, Mathematics, Computer Graphics</p>
+        <a href="https://github.com/sakkshm/tinyraytracer" class="proj-card-link">Github Link</a>
+      </div>
+      <div class="proj-card">
+        <h3 class="proj-card-title">MemeBot</h3>
+        <p class="proj-card-description">A Python bot that gathers memes from Reddit and compiles them into a video. It uses an unofficial Reddit API to fetch random memes, processes them with MoviePy, and uploads the final video to YouTube. Additionally, the bot sends status updates and video links to a Telegram chat automatically.</p>
+        <p class="proj-card-skills">Skills: Python, APIs, Web Scraping, Automation</p>
+        <a href="https://github.com/sakkshm/MemeBot" class="proj-card-link">Github Link</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" >
+    <div class="footer-title"><h4 style="color: grey;">© Saksham Saxena 2025</h4></div>
+    <div class="buttons">
+      <a href="https://github.com/sakkshm" target="_blank" style="text-decoration: none;"><span><i class="fa fa-github"></i> Github</span></a>
+      <a href="https://www.linkedin.com/in/sakkshm/" target="_blank" style="text-decoration: none;"><span><i class="fa fa-linkedin"></i> LinkedIn</span></a>
+      <a href="https://x.com/sakkshm" target="_blank" style="text-decoration: none;"><span><i class="fa fa-twitter"></i> Twitter</span></a>
+      
+    </div> 
+  </section>
+
+</body>
+
+<script>
+  function toggleMenu(){
+    if(document.getElementById("hamburger-menu-links").style.display == "flex"){
+      document.getElementById("hamburger-menu-links").style.display = "none";
+    }
+    else{
+      document.getElementById("hamburger-menu-links").style.display = "flex"
+    }
+
+  }
+</script>
+</html>
